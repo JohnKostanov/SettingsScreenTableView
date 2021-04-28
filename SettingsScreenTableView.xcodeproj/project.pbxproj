@@ -56,15 +56,63 @@
 		E14FCCEA263983BC00C4F566 /* SettingsScreenTableView */ = {
 			isa = PBXGroup;
 			children = (
-				E14FCCEB263983BC00C4F566 /* AppDelegate.swift */,
-				E14FCCED263983BC00C4F566 /* SceneDelegate.swift */,
-				E14FCCEF263983BC00C4F566 /* ViewController.swift */,
-				E14FCCF1263983BC00C4F566 /* Main.storyboard */,
-				E14FCCF4263983BD00C4F566 /* Assets.xcassets */,
-				E14FCCF6263983BD00C4F566 /* LaunchScreen.storyboard */,
-				E14FCCF9263983BD00C4F566 /* Info.plist */,
+				E14FCD00263984C700C4F566 /* Sources */,
+				E14FCCFF263984AC00C4F566 /* Resources */,
 			);
 			path = SettingsScreenTableView;
+			sourceTree = "<group>";
+		};
+		E14FCCFF263984AC00C4F566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCD02263984DF00C4F566 /* Storyboards */,
+				E14FCD01263984D200C4F566 /* Configs */,
+				E14FCCF4263983BD00C4F566 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E14FCD00263984C700C4F566 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCD042639850600C4F566 /* Scenes */,
+				E14FCD03263984FE00C4F566 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E14FCD01263984D200C4F566 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCF9263983BD00C4F566 /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		E14FCD02263984DF00C4F566 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCF1263983BC00C4F566 /* Main.storyboard */,
+				E14FCCF6263983BD00C4F566 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E14FCD03263984FE00C4F566 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCEB263983BC00C4F566 /* AppDelegate.swift */,
+				E14FCCED263983BC00C4F566 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E14FCD042639850600C4F566 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCEF263983BC00C4F566 /* ViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K285D3RL3;
-				INFOPLIST_FILE = SettingsScreenTableView/Info.plist;
+				INFOPLIST_FILE = SettingsScreenTableView/Resources/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K285D3RL3;
-				INFOPLIST_FILE = SettingsScreenTableView/Info.plist;
+				INFOPLIST_FILE = SettingsScreenTableView/Resources/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
