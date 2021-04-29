@@ -8,14 +8,15 @@
 import UIKit
 
 struct SettingsLine {
-    let title: String
     let icone: UIImage?
-    let iconeBackgrounColor: UIColor
+    let title: String
+//    let iconeBackgrounColor: UIColor
 //    let handler: (() -> Void)
     var isOn: Bool?
-}
 
-struct Section {
-    let title: String
-    let options: SettingsLine
+    typealias Line = (UIImage?, String, Bool?)
+
+    var line: Line {
+        (icone, title, isOn)
+    }
 }

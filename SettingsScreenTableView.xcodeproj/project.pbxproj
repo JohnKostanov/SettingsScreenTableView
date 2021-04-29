@@ -16,6 +16,7 @@
 		E14FCD0626398E8700C4F566 /* SettingsCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */; };
 		E14FCD08263994D300C4F566 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD07263994D300C4F566 /* Extensions.swift */; };
 		E14FCD0B26399BBC00C4F566 /* SettingsLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */; };
+		E15917D7263A868B008EAAA4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15917D6263A868B008EAAA4 /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellTableView.swift; sourceTree = "<group>"; };
 		E14FCD07263994D300C4F566 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLine.swift; sourceTree = "<group>"; };
+		E15917D6263A868B008EAAA4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */,
+				E15917D6263A868B008EAAA4 /* Section.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				E14FCD08263994D300C4F566 /* Extensions.swift in Sources */,
 				E14FCCF0263983BC00C4F566 /* ViewController.swift in Sources */,
 				E14FCCEC263983BC00C4F566 /* AppDelegate.swift in Sources */,
+				E15917D7263A868B008EAAA4 /* Section.swift in Sources */,
 				E14FCD0626398E8700C4F566 /* SettingsCellTableView.swift in Sources */,
 				E14FCD0B26399BBC00C4F566 /* SettingsLine.swift in Sources */,
 				E14FCCEE263983BC00C4F566 /* SceneDelegate.swift in Sources */,
