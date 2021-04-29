@@ -1,5 +1,5 @@
 //
-//  SettingsCellTableViewCell.swift
+//  SettingsCellTableView.swift
 //  SettingsScreenTableView
 //
 //  Created by Джон Костанов on 28/4/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsCellTableViewCell: UITableViewCell {
+class SettingsCellTableView: UITableViewCell {
 
     static let identifier = "SettingsCell"
 

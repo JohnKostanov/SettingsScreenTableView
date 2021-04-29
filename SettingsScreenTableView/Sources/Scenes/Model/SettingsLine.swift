@@ -14,3 +14,8 @@ struct SettingsLine {
 //    let handler: (() -> Void)
     var isOn: Bool?
 }
+
+struct Section {
+    let title: String
+    let options: SettingsLine
+}

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension SettingsCellTableViewCell {
+extension SettingsCellTableView {
     func addSubviews(_ subviews: UIView...) {
             subviews.forEach { addSubview($0) }
         }
