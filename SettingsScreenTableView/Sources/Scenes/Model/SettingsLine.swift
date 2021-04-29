@@ -10,7 +10,7 @@ import UIKit
 struct SettingsLine {
     let icone: UIImage?
     let title: String
-//    let iconeBackgrounColor: UIColor
+    let iconeBackgrounColor: UIColor
 //    let handler: (() -> Void)
     var isOn: Bool?
 

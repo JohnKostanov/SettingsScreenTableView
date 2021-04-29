@@ -16,12 +16,12 @@ extension Section {
     static func getSettings() -> [Section] {
         return [
            Section(title: "1", options: [
-                    SettingsLine(icone: UIImage(systemName: "airplane"), title: "Авиярежим", isOn: false),
-                    SettingsLine(icone: UIImage(systemName: "wifi"), title: "Wi-Fi", isOn: nil)
+            SettingsLine(icone: UIImage(systemName: "airplane"), title: "Авиярежим", iconeBackgrounColor: .systemOrange, isOn: false),
+            SettingsLine(icone: UIImage(systemName: "wifi"), title: "Wi-Fi", iconeBackgrounColor: .link, isOn: nil)
            ]),
             Section(title: "2", options: [
-                     SettingsLine(icone: UIImage(systemName: "note"), title: "Уведомления", isOn: nil),
-                     SettingsLine(icone: UIImage(systemName: "speaker.wave.3"), title: "Звуки, тактильные сигналы", isOn: nil)
+                SettingsLine(icone: UIImage(systemName: "note"), title: "Уведомления", iconeBackgrounColor: .systemRed, isOn: nil),
+                SettingsLine(icone: UIImage(systemName: "speaker.wave.3"), title: "Звуки, тактильные сигналы", iconeBackgrounColor: .systemRed, isOn: nil)
             ])
         ]
     }

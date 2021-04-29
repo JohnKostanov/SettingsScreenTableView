@@ -62,10 +62,5 @@ class SettingsCellTableView: UITableViewCell {
         iconeContainer.backgroundColor = nil
     }
 
-    public func configure(with model: SettingsLine) {
-        label.text = model.title
-        icone.image = model.icone
-//        iconeContainer.backgroundColor = model.iconeBackgrounColor
 
-    }
 }
