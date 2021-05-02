@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		E14FCCEC263983BC00C4F566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCCEB263983BC00C4F566 /* AppDelegate.swift */; };
-		E14FCCEE263983BC00C4F566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCCED263983BC00C4F566 /* SceneDelegate.swift */; };
 		E14FCCF0263983BC00C4F566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCCEF263983BC00C4F566 /* ViewController.swift */; };
-		E14FCCF3263983BC00C4F566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14FCCF1263983BC00C4F566 /* Main.storyboard */; };
 		E14FCCF5263983BD00C4F566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14FCCF4263983BD00C4F566 /* Assets.xcassets */; };
 		E14FCCF8263983BD00C4F566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14FCCF6263983BD00C4F566 /* LaunchScreen.storyboard */; };
+		E14FCD0626398E8700C4F566 /* SettingsCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */; };
+		E14FCD08263994D300C4F566 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD07263994D300C4F566 /* Extensions.swift */; };
+		E14FCD0B26399BBC00C4F566 /* SettingsLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */; };
+		E15917D7263A868B008EAAA4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15917D6263A868B008EAAA4 /* Section.swift */; };
+		E1781572263F2981003CB2CE /* SettingslArowWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1781571263F2981003CB2CE /* SettingslArowWithTitle.swift */; };
+		E19AA5DD263E82A7003CF9BF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */; };
+		E19AA5E0263E8D8E003CF9BF /* SettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */; };
+		E19AA5E2263EACDA003CF9BF /* SettingsArrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E14FCCE8263983BC00C4F566 /* SettingsScreenTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsScreenTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14FCCEB263983BC00C4F566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E14FCCED263983BC00C4F566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E14FCCEF263983BC00C4F566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E14FCCF2263983BC00C4F566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E14FCCF4263983BD00C4F566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E14FCCF7263983BD00C4F566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E14FCCF9263983BD00C4F566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellTableView.swift; sourceTree = "<group>"; };
+		E14FCD07263994D300C4F566 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLine.swift; sourceTree = "<group>"; };
+		E15917D6263A868B008EAAA4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E1781571263F2981003CB2CE /* SettingslArowWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingslArowWithTitle.swift; sourceTree = "<group>"; };
+		E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchCell.swift; sourceTree = "<group>"; };
+		E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsArrowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,93 @@
 		E14FCCEA263983BC00C4F566 /* SettingsScreenTableView */ = {
 			isa = PBXGroup;
 			children = (
-				E14FCCEB263983BC00C4F566 /* AppDelegate.swift */,
-				E14FCCED263983BC00C4F566 /* SceneDelegate.swift */,
-				E14FCCEF263983BC00C4F566 /* ViewController.swift */,
-				E14FCCF1263983BC00C4F566 /* Main.storyboard */,
-				E14FCCF4263983BD00C4F566 /* Assets.xcassets */,
-				E14FCCF6263983BD00C4F566 /* LaunchScreen.storyboard */,
-				E14FCCF9263983BD00C4F566 /* Info.plist */,
+				E14FCD00263984C700C4F566 /* Sources */,
+				E14FCCFF263984AC00C4F566 /* Resources */,
 			);
 			path = SettingsScreenTableView;
+			sourceTree = "<group>";
+		};
+		E14FCCFF263984AC00C4F566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCF4263983BD00C4F566 /* Assets.xcassets */,
+				E14FCD02263984DF00C4F566 /* Storyboards */,
+				E14FCD01263984D200C4F566 /* Configs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E14FCD00263984C700C4F566 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCD042639850600C4F566 /* Scenes */,
+				E14FCD03263984FE00C4F566 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E14FCD01263984D200C4F566 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCF9263983BD00C4F566 /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		E14FCD02263984DF00C4F566 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCF6263983BD00C4F566 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E14FCD03263984FE00C4F566 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCCEB263983BC00C4F566 /* AppDelegate.swift */,
+				E14FCD07263994D300C4F566 /* Extensions.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E14FCD042639850600C4F566 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E19AA5DE263E8CFF003CF9BF /* Views */,
+				E14FCD0926399B7200C4F566 /* Model */,
+				E14FCCEF263983BC00C4F566 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E14FCD0926399B7200C4F566 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */,
+				E15917D6263A868B008EAAA4 /* Section.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E19AA5DB263E825D003CF9BF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E19AA5DE263E8CFF003CF9BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */,
+				E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */,
+				E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */,
+				E1781571263F2981003CB2CE /* SettingslArowWithTitle.swift */,
+				E19AA5DB263E825D003CF9BF /* Main */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +216,6 @@
 			files = (
 				E14FCCF8263983BD00C4F566 /* LaunchScreen.storyboard in Resources */,
 				E14FCCF5263983BD00C4F566 /* Assets.xcassets in Resources */,
-				E14FCCF3263983BC00C4F566 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +226,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19AA5E2263EACDA003CF9BF /* SettingsArrowCell.swift in Sources */,
+				E14FCD08263994D300C4F566 /* Extensions.swift in Sources */,
 				E14FCCF0263983BC00C4F566 /* ViewController.swift in Sources */,
+				E1781572263F2981003CB2CE /* SettingslArowWithTitle.swift in Sources */,
+				E19AA5DD263E82A7003CF9BF /* MainTabBarController.swift in Sources */,
 				E14FCCEC263983BC00C4F566 /* AppDelegate.swift in Sources */,
-				E14FCCEE263983BC00C4F566 /* SceneDelegate.swift in Sources */,
+				E15917D7263A868B008EAAA4 /* Section.swift in Sources */,
+				E14FCD0626398E8700C4F566 /* SettingsCellTableView.swift in Sources */,
+				E19AA5E0263E8D8E003CF9BF /* SettingsSwitchCell.swift in Sources */,
+				E14FCD0B26399BBC00C4F566 /* SettingsLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E14FCCF1263983BC00C4F566 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E14FCCF2263983BC00C4F566 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E14FCCF6263983BD00C4F566 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +376,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K285D3RL3;
-				INFOPLIST_FILE = SettingsScreenTableView/Info.plist;
+				INFOPLIST_FILE = SettingsScreenTableView/Resources/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +396,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K285D3RL3;
-				INFOPLIST_FILE = SettingsScreenTableView/Info.plist;
+				INFOPLIST_FILE = SettingsScreenTableView/Resources/Configs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
