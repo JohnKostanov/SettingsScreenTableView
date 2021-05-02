@@ -16,12 +16,12 @@ enum CellType: String {
 final class ViewController: UIViewController {
    
 
-    private let settings = Section.getSettings()
+    let settings = Section.getSettings()
 
     lazy var tableView: UITableView = {
         var tableView = UITableView()
         tableView.rowHeight = 44
-        tableView.register(SettingsSwitchCell.self, forCellReuseIdentifier: CellType.switch.rawValue)
+        tableView.register(SettingsSwitchCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.separatorStyle = .none
         return tableView
@@ -44,6 +44,13 @@ final class ViewController: UIViewController {
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        settings.count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        settings[section].title
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -54,15 +61,24 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let line = settings[indexPath.section].options[indexPath.row]
 
-        guard let cell = tableView.dequeueReusableCell(
-                    withIdentifier: CellType.switch.rawValue, for: indexPath
-            ) as? SettingsCellTableView else { return UITableViewCell() }
+        switch settings[indexPath.section].options[indexPath.row].type {
+        case .switch:
+            guard let cell = tableView.dequeueReusableCell(
+                        withIdentifier: "cell", for: indexPath
+                ) as? SettingsCellTableView else { return UITableViewCell() }
 
-        cell.titleView.text = line.title
-        cell.iconView.image = line.icone
-        cell.iconView.backgroundColor = line.iconeBackgrounColor
-        cell.imageView?.tintColor = .white
+            cell.titleView.text = line.title
+            cell.iconView.image = line.icone
+            cell.iconView.backgroundColor = line.iconeBackgrounColor
+            cell.imageView?.tintColor = .white
 
-        return cell
+
+            return cell
+        case .arrow:
+            return UITableViewCell()
+        case .arrowWithTitle:
+            return UITableViewCell()
+        }
+
     }
 }

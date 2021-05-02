@@ -15,11 +15,11 @@ struct Section {
 extension Section {
     static func getSettings() -> [Section] {
         return [
-           Section(title: "1", options: [
+           Section(title: " ", options: [
             SettingsLine(icone: UIImage(systemName: "airplane"), title: "Авиярежим", iconeBackgrounColor: .systemOrange, type: .switch),
             SettingsLine(icone: UIImage(systemName: "wifi"), title: "Wi-Fi", iconeBackgrounColor: .link, type: .arrow)
            ]),
-            Section(title: "2", options: [
+            Section(title: " ", options: [
                 SettingsLine(icone: UIImage(systemName: "note"), title: "Уведомления", iconeBackgrounColor: .systemRed, type: .arrow),
                 SettingsLine(icone: UIImage(systemName: "speaker.wave.3"), title: "Звуки, тактильные сигналы", iconeBackgrounColor: .systemRed, type: .arrow)
             ])
