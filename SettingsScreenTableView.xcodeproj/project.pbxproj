@@ -17,6 +17,7 @@
 		E15917D7263A868B008EAAA4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15917D6263A868B008EAAA4 /* Section.swift */; };
 		E19AA5DD263E82A7003CF9BF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */; };
 		E19AA5E0263E8D8E003CF9BF /* SettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */; };
+		E19AA5E2263EACDA003CF9BF /* SettingsArrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E15917D6263A868B008EAAA4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchCell.swift; sourceTree = "<group>"; };
+		E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsArrowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */,
 				E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */,
+				E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */,
 				E19AA5DB263E825D003CF9BF /* Main */,
 			);
 			path = Views;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19AA5E2263EACDA003CF9BF /* SettingsArrowCell.swift in Sources */,
 				E14FCD08263994D300C4F566 /* Extensions.swift in Sources */,
 				E14FCCF0263983BC00C4F566 /* ViewController.swift in Sources */,
 				E19AA5DD263E82A7003CF9BF /* MainTabBarController.swift in Sources */,

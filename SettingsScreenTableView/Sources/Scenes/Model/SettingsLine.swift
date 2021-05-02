@@ -11,6 +11,7 @@ struct SettingsLine {
     let icone: UIImage?
     let title: String
     let iconeBackgrounColor: UIColor
+    let handler: (() -> Void)
 
     var type: CellType
 
