@@ -7,14 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+enum CellType: String {
+    case arrow
+    case arrowWithTitle
+    case `switch`
+}
 
-    var settings = Section.getSettings()
+final class ViewController: UIViewController {
+   
+
+private let settings: [(title: String, type: CellType)] = [
+    (title: "Авиарежим", type: .switch)
+]
 
     lazy var tableView: UITableView = {
         var tableView = UITableView()
         tableView.rowHeight = 44
-        tableView.register(SettingsCellTableView.self, forCellReuseIdentifier: "SettingsCell")
+        tableView.register(SettingsSwitchCell.self, forCellReuseIdentifier: CellType.switch.rawValue)
         tableView.dataSource = self
         tableView.separatorStyle = .none
         return tableView
@@ -24,7 +33,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupHierarchy()
         setupLayout()
-
     }
 
     private func setupHierarchy() {
@@ -38,39 +46,27 @@ class ViewController: UIViewController {
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
-
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let section = settings[section]
-        return section.title
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        settings.count
-    }
-   
 }
 
 extension ViewController: UITableViewDataSource {
-
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        settings[section].options.count
+        settings.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as? SettingsCellTableView else { return UITableViewCell() }
-        
-        let line = settings[indexPath.section].options[indexPath.row]
+        switch settings[indexPath.row].type {
+        case .switch:
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: CellType.switch.rawValue, for: indexPath
+            ) as? SettingsSwitchCell else { return UITableViewCell() }
 
-        cell.imageView?.image = line.icone
-        cell.imageView?.tintColor = .white
-        cell.imageView?.contentMode = .scaleAspectFit
-        cell.imageView?.backgroundColor = line.iconeBackgrounColor
-        cell.textLabel?.text = line.title
-//        cell. = line.
+            cell.setupView(with: "Авиарежим", and: UIImage(systemName: "airplane")!)
+            return cell
 
-
-        return cell
+        case .arrow:
+            return UITableViewCell()
+        case .arrowWithTitle:
+            return UITableViewCell()
+        }
     }
-
-
 }
