@@ -14,14 +14,15 @@ enum CellType: String {
 }
 
 final class ViewController: UIViewController {
-   
 
     let settings = Section.getSettings()
 
     lazy var tableView: UITableView = {
         var tableView = UITableView()
         tableView.rowHeight = 44
-
+        tableView.register(SettingsSwitchCell.self, forCellReuseIdentifier: CellType.switch.rawValue)
+        tableView.register(SettingsArrowCell.self, forCellReuseIdentifier: CellType.arrow.rawValue)
+        tableView.register(SettingslArowWithTitle.self, forCellReuseIdentifier: CellType.arrowWithTitle.rawValue)
         tableView.dataSource = self
         tableView.separatorStyle = .none
         return tableView
@@ -39,8 +40,7 @@ final class ViewController: UIViewController {
 
     private func setupLayout() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(SettingsArrowCell.self, forCellReuseIdentifier: CellType.arrow.rawValue)
-        tableView.register(SettingsSwitchCell.self, forCellReuseIdentifier: CellType.switch.rawValue)
+
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
@@ -64,30 +64,35 @@ extension ViewController: UITableViewDataSource {
         let line = settings[indexPath.section].options[indexPath.row]
 
         switch settings[indexPath.section].options[indexPath.row].type {
-        case .switch:
 
+        case .switch:
             guard let cell = tableView.dequeueReusableCell(
                 withIdentifier: CellType.switch.rawValue, for: indexPath
-                ) as? SettingsSwitchCell else { return UITableViewCell() }
+            ) as? SettingsSwitchCell else { return UITableViewCell() }
 
             cell.titleView.text = line.title
             cell.iconView.image = line.icone
             cell.iconView.backgroundColor = line.iconeBackgrounColor
-
             return cell
-        case .arrow:
 
+        case .arrow:
             guard let cell = tableView.dequeueReusableCell(
                 withIdentifier: CellType.arrow.rawValue, for: indexPath
-                ) as? SettingsArrowCell else { return UITableViewCell() }
+            ) as? SettingsArrowCell else { return UITableViewCell() }
             cell.titleView.text = line.title
             cell.iconView.image = line.icone
             cell.iconView.backgroundColor = line.iconeBackgrounColor
             return cell
 
         case .arrowWithTitle:
-            return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(
+                withIdentifier: CellType.arrowWithTitle.rawValue, for: indexPath
+            ) as? SettingslArowWithTitle else { return UITableViewCell() }
+            cell.titleView.text = line.title
+            cell.iconView.image = line.icone
+            cell.iconView.backgroundColor = line.iconeBackgrounColor
+            cell.detailLabel.text = line.detailLabel
+            return cell
         }
-
     }
 }

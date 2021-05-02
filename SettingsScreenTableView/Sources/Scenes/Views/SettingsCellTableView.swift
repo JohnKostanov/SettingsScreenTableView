@@ -37,7 +37,6 @@ class SettingsCellTableView: UITableViewCell {
 
     func setupHierarchy() {
         addSubviews(iconView, titleView, separatorView)
-
     }
 
     func setupLayout() {
@@ -56,8 +55,5 @@ class SettingsCellTableView: UITableViewCell {
         separatorView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 60).isActive = true
         separatorView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         separatorView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-
-
     }
-
 }

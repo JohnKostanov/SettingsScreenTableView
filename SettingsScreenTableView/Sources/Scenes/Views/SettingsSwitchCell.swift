@@ -8,12 +8,7 @@
 import UIKit
 
 final class SettingsSwitchCell: SettingsCellTableView {
-    func setupView(with title: String, and icon: UIImage) {
-        titleView.text = title
-        iconView.backgroundColor = .systemOrange
-        iconView.image = icon
-    }
-
+    
     private lazy var switchView = UISwitch()
 
     override func setupHierarchy() {

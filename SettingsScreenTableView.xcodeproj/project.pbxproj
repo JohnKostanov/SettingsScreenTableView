@@ -15,6 +15,7 @@
 		E14FCD08263994D300C4F566 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD07263994D300C4F566 /* Extensions.swift */; };
 		E14FCD0B26399BBC00C4F566 /* SettingsLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */; };
 		E15917D7263A868B008EAAA4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15917D6263A868B008EAAA4 /* Section.swift */; };
+		E1781572263F2981003CB2CE /* SettingslArowWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1781571263F2981003CB2CE /* SettingslArowWithTitle.swift */; };
 		E19AA5DD263E82A7003CF9BF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */; };
 		E19AA5E0263E8D8E003CF9BF /* SettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */; };
 		E19AA5E2263EACDA003CF9BF /* SettingsArrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */; };
@@ -31,6 +32,7 @@
 		E14FCD07263994D300C4F566 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E14FCD0A26399BBC00C4F566 /* SettingsLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLine.swift; sourceTree = "<group>"; };
 		E15917D6263A868B008EAAA4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E1781571263F2981003CB2CE /* SettingslArowWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingslArowWithTitle.swift; sourceTree = "<group>"; };
 		E19AA5DC263E82A7003CF9BF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchCell.swift; sourceTree = "<group>"; };
 		E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsArrowCell.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				E14FCD0526398E8700C4F566 /* SettingsCellTableView.swift */,
 				E19AA5DF263E8D8E003CF9BF /* SettingsSwitchCell.swift */,
 				E19AA5E1263EACDA003CF9BF /* SettingsArrowCell.swift */,
+				E1781571263F2981003CB2CE /* SettingslArowWithTitle.swift */,
 				E19AA5DB263E825D003CF9BF /* Main */,
 			);
 			path = Views;
@@ -226,6 +229,7 @@
 				E19AA5E2263EACDA003CF9BF /* SettingsArrowCell.swift in Sources */,
 				E14FCD08263994D300C4F566 /* Extensions.swift in Sources */,
 				E14FCCF0263983BC00C4F566 /* ViewController.swift in Sources */,
+				E1781572263F2981003CB2CE /* SettingslArowWithTitle.swift in Sources */,
 				E19AA5DD263E82A7003CF9BF /* MainTabBarController.swift in Sources */,
 				E14FCCEC263983BC00C4F566 /* AppDelegate.swift in Sources */,
 				E15917D7263A868B008EAAA4 /* Section.swift in Sources */,

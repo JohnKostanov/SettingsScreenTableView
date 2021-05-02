@@ -7,13 +7,8 @@
 
 import UIKit
 
-final class SettingsArrowCell: SettingsCellTableView {
-    func setupView(with title: String, and icon: UIImage) {
-        titleView.text = title
-        iconView.backgroundColor = .systemOrange
-        iconView.image = icon
-    }
-
+class SettingsArrowCell: SettingsCellTableView {
+   
     lazy var labelArrow: UILabel = {
         let labelArrow = UILabel()
         labelArrow.text = "＞"

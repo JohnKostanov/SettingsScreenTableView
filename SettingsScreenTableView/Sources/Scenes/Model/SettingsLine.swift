@@ -11,13 +11,7 @@ struct SettingsLine {
     let icone: UIImage?
     let title: String
     let iconeBackgrounColor: UIColor
-    let handler: (() -> Void)
+    let detailLabel: String?
 
     var type: CellType
-
-    typealias Line = (UIImage?, String)
-
-    var line: Line {
-        (icone, title)
-    }
 }
