@@ -57,7 +57,7 @@ final class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        settings.count
+        settings[section].options.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -70,27 +70,27 @@ extension ViewController: UITableViewDataSource {
                 withIdentifier: CellType.switch.rawValue, for: indexPath
             ) as? SettingsSwitchCell else { return UITableViewCell() }
 
+            cell.iconView.backgroundColor = line.iconeBackgrounColor
             cell.titleView.text = line.title
             cell.iconView.image = line.icone
-            cell.iconView.backgroundColor = line.iconeBackgrounColor
             return cell
 
         case .arrow:
             guard let cell = tableView.dequeueReusableCell(
                 withIdentifier: CellType.arrow.rawValue, for: indexPath
             ) as? SettingsArrowCell else { return UITableViewCell() }
+            cell.iconView.backgroundColor = line.iconeBackgrounColor
             cell.titleView.text = line.title
             cell.iconView.image = line.icone
-            cell.iconView.backgroundColor = line.iconeBackgrounColor
             return cell
 
         case .arrowWithTitle:
             guard let cell = tableView.dequeueReusableCell(
                 withIdentifier: CellType.arrowWithTitle.rawValue, for: indexPath
             ) as? SettingslArowWithTitle else { return UITableViewCell() }
+            cell.iconView.backgroundColor = line.iconeBackgrounColor
             cell.titleView.text = line.title
             cell.iconView.image = line.icone
-            cell.iconView.backgroundColor = line.iconeBackgrounColor
             cell.detailLabel.text = line.detailLabel
             return cell
         }
