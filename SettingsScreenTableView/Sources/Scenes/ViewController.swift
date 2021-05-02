@@ -16,9 +16,7 @@ enum CellType: String {
 final class ViewController: UIViewController {
    
 
-private let settings: [(title: String, type: CellType)] = [
-    (title: "Авиарежим", type: .switch)
-]
+    private let settings = Section.getSettings()
 
     lazy var tableView: UITableView = {
         var tableView = UITableView()
@@ -54,19 +52,17 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch settings[indexPath.row].type {
-        case .switch:
-            guard let cell = tableView.dequeueReusableCell(
+        let line = settings[indexPath.section].options[indexPath.row]
+
+        guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: CellType.switch.rawValue, for: indexPath
-            ) as? SettingsSwitchCell else { return UITableViewCell() }
+            ) as? SettingsCellTableView else { return UITableViewCell() }
 
-            cell.setupView(with: "Авиарежим", and: UIImage(systemName: "airplane")!)
-            return cell
+        cell.titleView.text = line.title
+        cell.iconView.image = line.icone
+        cell.iconView.backgroundColor = line.iconeBackgrounColor
+        cell.imageView?.tintColor = .white
 
-        case .arrow:
-            return UITableViewCell()
-        case .arrowWithTitle:
-            return UITableViewCell()
-        }
+        return cell
     }
 }

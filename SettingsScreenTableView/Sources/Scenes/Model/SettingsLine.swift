@@ -11,12 +11,12 @@ struct SettingsLine {
     let icone: UIImage?
     let title: String
     let iconeBackgrounColor: UIColor
-//    let handler: (() -> Void)
-    var isOn: Bool?
 
-    typealias Line = (UIImage?, String, Bool?)
+    var type: CellType
+
+    typealias Line = (UIImage?, String)
 
     var line: Line {
-        (icone, title, isOn)
+        (icone, title)
     }
 }
